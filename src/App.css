@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  font-family: 'Zilla' , sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root{
+  --mainColor: #f57224;
+  --whiteColor: #fff;
+  --blackColor: #000;
+  --lightColor: #222;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav{
+  width: 100%;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 100px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  position: fixed;
+  top: 0;
+}
+.left{
+  width: 50%;
+  text-align: left;
+}
+.left a{
+  font-weight: 700;
+  color: var(--mainColor);
+  font-size: 21px;
+}
+.right{
+  width: 50%;
+  text-align: right;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul{
+  list-style: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul a{
+  text-decoration: none;
+}
+.shoppingcart i{
+  font-size: 20px;
+  display: inline-block;
+  color: var(--lightColor);
+  margin-right: 15px;
+}
+
+.shoppingcount{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  background: var(--mainColor);
+  color: var(--whiteColor);
+  border-radius: 50%;
+  line-height: 35px;
+  text-align: center;
+  font-size: 12px;
+}
+
+
+/* Banner */
+.container{
+  width: 100%;
+padding: 0 100px;
+}
+header{
+/* width: 100%; */
+background: url('../src/assets/8.jpg');
+height: 400px;
+width: 100%;
+margin-top: 70px;
+background-size: cover;
+background-repeat: no-repeat;
+/* display: flex;
+align-items: center;*/
+color: white; 
+}
+
+.headertext{
+  background:rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+align-items: center;
+/* color: white; */
+justify-content: center;
+}
+
+.headertext h1{
+  font-size: 25px;
+
+}
+
+.headertext p{
+  margin-top: 10px;
+}
+
+.images{
+  height: 130px;
 }

@@ -1,23 +1,16 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Banner from './components/Banner';
+import Navbar1 from './components/Navbar1'
+import ProductContext from './Globals/ProductContext';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar1 />
+      <Banner />
+      <ProductContext />
+      
     </div>
   );
 }
